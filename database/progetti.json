@@ -1,0 +1,65 @@
+{
+    "evidenza": [
+        {
+            "titolo": "TOZZI",
+            "img": "database/media/tozzi1.png",
+            "id": "tozzi",
+            "num": 1
+        },
+        {
+            "titolo": "NUVOLE",
+            "img": "database/media/nuvole1.png",
+            "id": "nuvole",
+            "num": 2
+        },
+        {
+            "titolo": "MONOLITH",
+            "img": "database/media/monolith0.jpg",
+            "id": "monolith",
+            "num": 3
+        }
+    ],
+    "progetti": [
+        {
+            "titolo": "Tozzi - Uncerto Nonsochì",
+            "img": "database/media/tozzi3_cover.jpg",
+            "id": "tozzi",
+            "num": 1,
+            "filtro": [
+                "all",
+                "video"
+            ]
+        },
+        {
+            "titolo": "Monolith - IRo21",
+            "img": "database/media/monolith3_cover.jpg",
+            "id": "monolith",
+            "num": 2,
+            "filtro": [
+                "all",
+                "visual",
+                "video"
+            ]
+        },
+        {
+            "titolo": "Aico",
+            "img": "database/media/aico1.png",
+            "id": "aico",
+            "num": 3,
+            "filtro": [
+                "all",
+                "prodotto"
+            ]
+        },
+        {
+            "titolo": "Nuvole",
+            "img": "database/media/nuvole1.png",
+            "id": "nuvole",
+            "num": 4,
+            "filtro": [
+                "all",
+                "web"
+            ]
+        }
+    ]
+}

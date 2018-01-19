@@ -1,0 +1,14 @@
+{
+    "proj": {
+        "titolo": "Aico - Hypercontroller"
+        , "img": "database/media/aico1.png"
+        , "logo": "database/media/aico2.png"
+        , "video": "database/media/video/aico3.mp4"
+        , "cover": "database/media/aico3_cover.png"
+        , "frase": "L'incrocio tra una sfera ed un dado"
+        , "descrizione": "Aico è un controller multifunzione realizzato durante il corso di Interaction Design al Quasar Design University. Aico ha come obiettivo è offrire all’utente un approccio più intuitivo e naturale con la gestione di diverse funzioni del proprio computer come volume, luminosità, scorrimento liste di contenuti ed altre funzioni personalizzabili. Grazie alle sua forma, permette di gestire fino ad 8 funzioni. L'affordance dell'oggetto, che è l’incrocio tra quella di una sfera ed un dado, invita subito all’utilizzo"
+        , "design": "30"
+        , "develop": "70"
+        , "link": "https://github.com/nikitag33/AICO"
+    }
+}

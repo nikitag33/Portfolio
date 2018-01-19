@@ -1,0 +1,110 @@
+<html lang="it">
+
+<head>
+    <title>Gino Fiore</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Gino Fiore">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    
+    <!-- Icon Font -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="aos/aos.css">
+    <link rel="icon" type="image/png" href="css/icon/nik-ico.png" /> </head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navtop navbar-toggleable-md navbar-dark fixed-top" style="z-index: +100">
+        <a class="navbar-brand navbar-expand-lg" href="index.html"> <img src="css/img/pic_nik.png" width="60" height="30" class="d-inline-block align-top logonik" alt=""> </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto" style="text-align: right">
+                <li class="nav-item"> <a class="nav-link" href="index.html">HOME</a> </li>
+                <li class="nav-item active"> <a class="nav-link" href="portfolio.html">PORTFOLIO</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="contatti.html">CONTATTI</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar fixed-bottom navbar-dark bg-faded" style="z-index: +100">
+        <div class="animated bounce scroll">
+            <p class="verticalText">SCROLL</p>
+        </div>
+        <div class="social ml-auto">
+            <a target="_blank" class="navbar-brand navbar-expand-lg" href="#"> <img src="css/icon/behance.png" width="20" height="20" class="d-inline-block align-top" alt=""> </a>
+            <a target="_blank" class="navbar-brand navbar-expand-lg" href="https://www.linkedin.com/in/gino-fiore-700621153/"> <img src="css/icon/linkedin.png" width="20" height="20" class="d-inline-block align-top" alt=""> </a>
+            <a target="_blank" class="navbar-brand navbar-expand-lg" href="https://www.instagram.com/nikita_g33/"> <img src="css/icon/instagram.png" width="20" height="20" class="d-inline-block align-top" alt=""> </a>
+        </div>
+    </nav>
+    <div class="fixed-bottom up" style="z-index: +100">
+        <p style="margin: 0; float: left">Gino Fiore</p>
+        <div class="social" style="float: left">
+            <a style="margin-top: 0;" target="_blank" href="#"><img src="css/icon/behance_b.png" width="20" height="20" class="d-inline-block align-top" alt=""></a>
+            <a style="margin-top: 0;" target="_blank" href="https://www.linkedin.com/in/gino-fiore-700621153/"><img src="css/icon/linkedin_b.png" width="20" height="20" class="d-inline-block align-top" alt=""></a>
+            <a style="margin-top: 0;" target="_blank" href="https://www.instagram.com/nikita_g33/"><img src="css/icon/instagram_b.png" width="20" height="20" class="d-inline-block align-top" alt=""></a>
+        </div>
+    </div>
+    
+    <!-- HERO BANNER -->
+    <div class="herobanner-back-works">
+        <square class="squarecont2">
+            <div class="square2"> </div>
+        </square>
+        <div class="container">
+            <div class="block1 col-md-4 center-block" style="display: table; margin: auto">
+                <div class="centeredtext" style="display: table-cell; vertical-align: middle;">
+                    <h3 data-aos="fade-in" data-aos-easing="ease" data-aos-delay="200" data-aos-duration="1500">PORTFOLIO</h3> </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- MASCHERINO VUOTO 1 -->
+    <div class="herobanner"></div>
+    
+    <!-- FILTER -->
+    <div class="container service">
+        <div class="filtraggio">
+            <div class="filter col-md-3">
+                <h6>Filter by</h6>
+                <button type="button" class="btn tutti attivo col-12" data-key="all">ALL PROJECT</button>
+                <button type="button" class="btn col-12" data-key="visual">VISUAL</button>
+                <button type="button" class="btn col-12" data-key="web">WEB DESIGN</button>
+                <button type="button" class="btn col-12" data-key="video">VIDEO</button>
+                <button type="button" class="btn col-12" data-key="prodotto">PRODUCT</button>
+            </div>
+        </div>
+        <div class="row justify-content-between list-unstyled padd" id='data-list'> </div>
+    </div>
+    
+    <!-- CARDS APPEND SCRIPT -->
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div class="entry col-lg-4 col-md-8">
+            <div class="card">
+                <div class="card-block" data-scroll-reveal="enter bottom" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <a href="schedaprogetto.html?id={{id}}">
+                        <div class="projectimg" style="background-image: url({{img}})" data-scroll-reveal="enter bottom" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100"></div>
+                    </a>
+                    <h4 class="card-title">{{titolo}}</h4> <a href="schedaprogetto.html?id={{id}}" class="card-text">Scopri di più</a> </div>
+            </div>
+        </div>
+    </script>
+    
+    <!-- LIBRARY JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    
+    <!-- MY JS -->
+    <script src="js/portfolio.js"></script>
+    <script src="aos/aos.js"></script>
+</body>
+
+</html>

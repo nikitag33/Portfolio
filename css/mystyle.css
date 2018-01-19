@@ -1,0 +1,875 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600');
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2.5px;
+    transition-duration: 1s;
+}
+
+/*
+
+TESTI
+
+*/
+
+h6 {
+    color: darkgray;
+    margin-top: .5rem;
+    font-size: 10pt;
+}
+
+h2 {
+    color: black;
+    margin-top: .5rem;
+    font-size: 24pt;
+}
+
+h3 {
+    font-size: 32pt;
+}
+
+h5 {
+    color: darkgray;
+    font-size: 14pt;
+}
+
+a {
+    color: darkgray;
+    margin-top: .5rem;
+    font-size: 10pt;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/*
+
+NAVBAR 
+
+*/
+
+.navbar {
+    background-color: transparent;
+    z-index: +3;
+    animation-duration: 1s;
+    padding: .3rem 1rem;
+}
+
+.navbar-brand {
+    margin: 0;
+}
+
+.nav-link {
+    margin-left: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 8pt;
+}
+
+.nav-link:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.navtop {
+    transition-duration: 1s;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.nav-link:visited {
+    color: white;
+}
+
+#blacklogo {
+    opacity: 0;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+    padding: .20rem 0;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: transparent;
+    padding: .20rem 0;
+}
+
+button:focus {
+    outline: 0;
+    outline: 0 -webkit-focus-ring-color;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(icon/menu-button_black.svg);
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(icon/menu-button_white.svg);
+}
+
+.scroll {
+    position: absolute;
+    width: 14px;
+    height: auto;
+    background-image: url(icon/scroll.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0;
+    animation-iteration-count: 5;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    transition-duration: 2s;
+}
+
+.verticalText {
+    color: white;
+    font-size: 8pt;
+    transform: rotate(270deg);
+    transform-origin: left top 0;
+    margin-bottom: 50px;
+    padding-top: 1px;
+}
+
+.up {
+    background-color: white;
+    text-align: left;
+    text-decoration: ;
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem 1rem;
+    opacity: 0;
+    transition-duration: 2s;
+}
+
+
+/*
+
+SQUARE
+
+*/
+
+.squarecont {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    position: fixed;
+    border-style: solid;
+    border-width: 4px;
+    background-color: transparent;
+    width: 25vw;
+    height: 25vw;
+    margin: auto;
+    opacity: 0.03;
+    transition-duration: 1.5s;
+}
+
+.squarecont2 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -2;
+}
+
+.square2 {
+    background-color: #050F0D;
+    width: 25vw;
+    height: 25vw;
+    margin: auto;
+    opacity: 0.3;
+    transition-duration: 1.5s;
+}
+
+square { mix-blend-mode: darken; }
+
+.buttonworks {
+    position: absolute;
+    width: 45%;
+    height: 45vh;
+    margin-top: 55vh;
+    margin-left: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttontoworks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.squarebutton {
+    position: absolute;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    background-color: transparent;
+    width: 5vw;
+    height: 5vw;
+    margin: auto;
+    opacity: 0.3;
+    transition-duration: 2s;
+}
+
+.port {
+    color: white;
+    margin-top: 20px;
+    margin-right: 40px;
+    transition-duration: 2s;
+}
+
+.buttontoworks:hover .port {
+    margin-right: 0;
+    transition-duration: 2s;
+    font-size: 7pt;
+}
+
+.buttontoworks:hover .squarebutton {
+    opacity: 1;
+    margin-right: 0;
+    width: 6.5vw;
+    height: 6.5vw;
+    transition-duration: 2s;
+}
+
+
+/*
+
+HEROBANNER 
+
+*/
+
+.videoback {
+    position: fixed;
+    z-index: -4;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.block1 {
+    height: 100vh;
+    margin: auto;
+}
+
+.herobanner-back {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -3;
+    padding: 0;
+}
+
+.herobanner-back-works {
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url("img/home-background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -2;
+}
+
+.centeredtext {
+    color: white;
+    text-align: center;
+    z-index: -1;
+}
+
+h3.centeredtext {
+    letter-spacing: 3.5px;
+}
+
+.herobanner {
+    width: 100%;
+    height: 100vh;
+    z-index: +5;
+}
+
+.fix {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+
+/*
+
+HOME SERVIZI
+
+*/
+
+.service {
+    background-color: white;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    z-index: +99;
+}
+
+.blockServ {
+    width: 66.66%;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: +99;
+    margin: auto;
+}
+
+.servizi {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: +99;
+}
+
+.servicelist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5rem;
+    font-size: 32pt;
+    z-index: +99;
+}
+
+
+/*
+
+PROJECT CAROUSSEL
+
+*/
+
+.best-work {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: -2;
+}
+
+.slider {
+    width: 100%; 
+    padding: 0; 
+    height: 100vh; 
+    position: fixed; 
+    top: 50vh;
+}
+
+.sfondo {
+    min-width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    z-index: -5;
+    position: fixed;
+}
+
+.centeredtextcaroussel {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progetto1 {
+    transition-duration: 2s;
+    position: fixed;
+    z-index: -3;
+    opacity: 1;
+}
+
+.progetto2 {
+    transition-duration: 2s;
+    position: fixed;
+    z-index: -4;
+}
+
+.progetto3 {
+    position: fixed;
+    z-index: -5;
+    transition-duration: 2s;
+}
+
+.progetto21 {
+    transition-duration: 2s;
+    position: fixed;
+    z-index: +7;
+    opacity: 0;
+    transform: translateX(+100vh)
+}
+
+.progetto22 {
+    transition-duration: 2s;
+    position: fixed;
+    z-index: +6;
+    opacity: 0;
+    transform: translateX(+100vh)
+}
+
+.progetto23 {
+    position: fixed;
+    z-index: +5;
+    transition-duration: 2s;
+    opacity: 0;
+    transform: translateX(+100vh)
+}
+
+.scoprislider {
+    color: white;
+}
+
+.scoprislider:hover {
+    color: white;
+}
+
+.evid {
+    opacity: 0;
+    font-size: 10pt;
+    margin-bottom: 3.3%;
+}
+
+.evidA {
+    font-size: 10pt;
+    margin-bottom: 100px;
+}
+
+.titoloevid {
+    margin-bottom: 4%;
+}
+
+.indicatore {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.indicatoreA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 45px;
+    opacity: 0.95;
+}
+
+.indicatori {
+    position: absolute;
+    width: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.indicatori img {
+    cursor: pointer;
+}
+
+.indicatoriEv {
+    position: absolute;
+    display: flex;
+    width: 6%;
+    justify-content: center;
+}
+
+
+/*
+-
+PORTFOLIO
+-
+*/
+
+.filtraggio {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    z-index: 0;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.btn {
+    margin-bottom: 5%;
+    background-color: transparent;
+    color: darkgray;
+    border: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 10pt;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+.btn:focus {
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+h6.filter {
+    color: lightgray;
+}
+
+.attivo {
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.tutti {
+    font-weight: 600;
+}
+
+.filter {
+    text-align: center;
+    float: none;
+}
+
+.padd {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.entry {
+    margin: 5%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.card {
+    width: 100%;
+    border: 0;
+    margin-top: 0;
+    margin-bottom: 30%;
+}
+
+.card2 {
+    padding-top: 8%;
+    margin-top: 30%;
+    margin-bottom: 0;
+}
+
+.projectimg {
+    width: 100%;
+    padding-top: 56.25%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 3px 15px darkgray;
+    margin-bottom: 4%;
+}
+
+
+/*
+-
+SCHEDA PROGETTO
+-
+*/
+
+.imageProj {
+    padding: 0;
+    box-shadow: 0px 3px 15px darkgray;
+    color: gra
+}
+
+.video {
+    box-shadow: 0px 3px 15px darkgray;
+    padding: 0;
+}
+
+.entrata {
+    margin: 0;
+    float: none;
+}
+
+.titolo {
+    text-align: center;
+}
+
+.descriz {
+    margin: 8% 0;
+}
+
+.descrizionetext {
+    display: flex;
+    align-items: center;
+}
+
+.logoimg {
+    padding: 0;
+    height: auto;
+    min-height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.back {
+    margin: 0;
+    float: left;
+    cursor: pointer;
+}
+
+backprog:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+    
+    
+}
+
+.social {
+    text-decoration: none;
+}
+
+.set-size {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    padding-right: 0.8%;
+}
+
+
+/*
+-
+CONTATTI
+-
+*/
+
+.contatti {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -3;
+}
+
+.contactblock {
+    color: black;
+    text-align: center;
+}
+
+.black {
+    color: black;
+    font-weight: 600;
+}
+
+.mail {
+    color: black;
+    font-size: 1rem;
+}
+
+.cont1 {
+    float: left;
+    text-align: right; 
+    padding-right: 20px;
+}
+
+.cont2 {
+    float: left;
+    padding-right: 20px;
+}
+
+.socialText {
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+
+
+/*
+-
+MEDIA QUERY
+-
+*/
+@media screen and (max-width: 1024px) {
+    .square2 {
+        width: 35vw;
+        height: 35vw;
+    }
+    .square {
+        width: 35vw;
+        height: 35vw;
+        opacity: 0.03;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .square2 {
+        width: 45vw;
+        height: 45vw;
+    }
+    .square {
+        width: 45vw;
+        height: 45vw;
+        opacity: 0.03;
+    }
+    .indicatoreA {
+        padding-top: 80px;
+    }
+    .squarebutton {
+        width: 10vw;
+        height: 10vw;
+        opacity: 0.1;
+    }
+    .indicatori {
+        width: 12%;
+    }
+    .indicatoriEv {
+        width: 12%;
+    }
+    .card {
+        width: 100%;
+        border: 0;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+    .card2 {
+        padding-top: 0%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    } 
+    .entry {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+     font-size: 24pt;    
+    }
+    h2 {
+     font-size: 24pt;    
+    }
+    h3 {
+        font-size: 24pt;
+    }
+    h5 {
+        font-size: 10pt;
+    }
+    p{
+        font-size: 10pt;  
+    }
+    a {
+        font-size: 8pt;
+        text-decoration: underline;
+    }
+    .square2 {
+        width: 80vw;
+        height: 80vw;
+    }
+    .square {
+        width: 80vw;
+        height: 80vw;
+        opacity: 0.03;
+    }
+    .servicelist {
+        font-size: 18pt;
+    }
+    .servicelist li {
+        margin-bottom: 7%;
+    }
+    .blockServ {
+        width: 100%;
+    }
+    .videoback {
+        left: -100vh;
+    }
+    .buttontoworks a {
+        text-decoration-color: white;
+    }
+    .indicatoreA {
+        padding-top: 120px;
+    }
+    .indicatori {
+        width: 20%;
+    }
+    .indicatoriEv {
+        width: 20%;
+    }
+    .but {
+        display: flex;
+        justify-content: center
+    }
+    .buttonworks {
+        margin-top: 55vh;
+        margin-left: 0;
+    }
+    .port {
+        font-size: 8pt;
+        text-align: center;
+        margin-top: 15px;
+        margin-right: 0;
+    }
+    .squarebutton {
+        width: 12vw;
+        height: 12vw;
+        opacity: 0.1;
+    }  
+    .card {
+        width: 100%;
+        border: 0;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+    .card2 {
+        padding-top: 0%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }   
+    .padd {
+        padding-top: 20%;
+    }
+    .cont1 {
+        margin-top: 15%;
+        text-align: center; 
+    }
+    .cont2 {
+        text-align: center; 
+    }
+    .socialCont a {
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+    }
+    .descriz {
+        margin-top: 0;
+    }
+    .stat-group {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    .per {
+        font-size: 18pt !important;
+    }
+    .grafic {
+        margin-top: 25% !important;
+    }
+}

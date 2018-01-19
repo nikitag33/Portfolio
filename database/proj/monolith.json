@@ -1,0 +1,14 @@
+{
+    "proj": {
+        "titolo": "Monolith - IRo21"
+        , "img": "database/media/monolith1.jpg"
+        , "logo": "database/media/monolith2.png"
+        , "video": "database/media/video/monolith3.mp4"
+        , "cover": "database/media/monolith3_cover.jpg"
+        , "frase": "frase sintesi"
+        , "descrizione": "Monolith è il secondo Album musicale di Iro21 al quale ho contribuito realizzando il visual dell'album: restyling logo, copertina dell’album, video in motion graphics per le principali piattaforme web. Monolith è stato pubblicato per Hashetic Front Record ed è disponibile su SoundCloud, Bandcamp e Youtube"
+        , "design": "100"
+        , "develop": "0"
+        , "link": "https://soundcloud.com/hasheticfrontrecords/sets/iro-21-monolith"
+    }
+}
