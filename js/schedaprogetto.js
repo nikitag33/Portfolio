@@ -1,8 +1,4 @@
 $('html').removeClass();
-$('html').css({
-    "-webkit-box-sizing": "border-box",
-    "box-sizing": "border-box"
-})
 
 $(document).ready(function () {
     $('.up').css({
@@ -12,19 +8,23 @@ $(document).ready(function () {
     AOS.init({
         duration: 1000,
     });
-    
+
     //DATA JSON
     var source = $("#entry-template").html();
     var template = Handlebars.compile(source);
     var id = window.location.search,
         id = id.replace('?id=', 'proj/');
     var root = "http://www.ginofiore.eu/database/" + id + ".json"
+    
     $.getJSON(root, function (data) {
         $.each(data, function (key, value) {
             var context = data[key];
             console.log(data)
             var html = template(context);
             $('#data-list').append(html);
+            if (context.video == ""){
+                $("#my-video").removeAttr("controls")
+            };
         });
     
     });

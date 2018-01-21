@@ -13,6 +13,24 @@ body {
     transition-duration: 1s;
 }
 
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    overflow: visible;
+    background: #080808
+}
+.gif {
+    margin: auto;
+    width: 25vw;
+    height: 100%;
+    background: url("img/preloader.gif") no-repeat center center;
+    background-size: contain;
+}
+
 /*
 
 TESTI
@@ -50,7 +68,6 @@ a:hover {
     color: black;
     text-decoration: underline;
 }
-
 
 /*
 
@@ -719,10 +736,14 @@ MEDIA QUERY
         height: 35vw;
         opacity: 0.03;
     }
-}
+    .gif {
+        width: 35vw;
+    }
 
 @media screen and (max-width: 768px) {
-    
+    .gif {
+        width: 45vw;
+    }
     .square2 {
         width: 45vw;
         height: 45vw;
@@ -781,6 +802,9 @@ MEDIA QUERY
     a {
         font-size: 8pt;
         text-decoration: underline;
+    }
+    .gif {
+        width: 80vw;
     }
     .square2 {
         width: 80vw;

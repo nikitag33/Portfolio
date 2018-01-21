@@ -1,21 +1,21 @@
 {
     "evidenza": [
         {
-            "titolo": "TOZZI",
-            "img": "database/media/tozzi1.png",
-            "id": "tozzi",
+            "titolo": "MONOLITH",
+            "img": "database/media/monolith0.jpg",
+            "id": "monolith",
             "num": 1
         },
         {
             "titolo": "NUVOLE",
-            "img": "database/media/nuvole1.png",
+            "img": "database/media/nuvole0.jpg",
             "id": "nuvole",
             "num": 2
         },
         {
-            "titolo": "MONOLITH",
-            "img": "database/media/monolith0.jpg",
-            "id": "monolith",
+            "titolo": "TOZZI",
+            "img": "database/media/tozzi0.jpg",
+            "id": "tozzi",
             "num": 3
         }
     ],

@@ -1,7 +1,10 @@
 $('.fix').hide()
 $('.best-work').hide();
 
-$(document).ready(function () {
+$(document).ready(function () {  
+    $(window).on('load', function () {
+        $('#preloader').fadeIn(1).delay(250).fadeOut('slow',function(){$(this).remove();});
+    });
     AOS.init({
         duration: 1000,
     });
@@ -9,10 +12,8 @@ $(document).ready(function () {
     var viewPortSize =  viewport / 4.3;
     var source = $("#entry-template").html();
     var source2 = $("#entry2-template").html();
-    var source3 = $("#entry3-template").html();
     var template = Handlebars.compile(source);
     var template2 = Handlebars.compile(source2);
-    var template3 = Handlebars.compile(source3);
     var root = "http://www.ginofiore.eu/database/progetti.json"
     
     //DATA JSON
@@ -29,13 +30,8 @@ $(document).ready(function () {
             var context = dati[key];
             var html = template2(context);
             $('#data-line').append(html);
+            $('#data-preloading').append('<img style="widht: 1; height: 0;" src="' + context.img + '">');
         });
-        
-        $.each(dati, function (key, value) {
-            var context = dati[key];
-            var html = template3(context);
-            $('#data-preloading').append(html);
-        }); 
     });  
     
     //STYLE JS
