@@ -19,14 +19,22 @@ $(document).ready(function () {
     $.getJSON(root, function (data) {
         $.each(data, function (key, value) {
             var context = data[key];
-            console.log(data)
             var html = template(context);
             $('#data-list').append(html);
             if (context.video == ""){
                 $("#my-video").removeAttr("controls")
             };
         });
-    
+        $.each(data.proj.team, function (key, value) {
+            var context2 = data.proj.team[key];
+            console.log(context2);
+            $('#teamPers').append('<li><p>'+context2+'</p></li>');
+            if (context2 == ""){
+                $(".team").remove();
+                $(".cred").removeClass("col-lg-7");
+                $(".cred").addClass("col-12");
+            }; 
+        });
     });
     
     //GRAFICO PERCENTUALE

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     AOS.init({
         duration: 1000,
     });
@@ -7,6 +7,9 @@ $(document).ready(function () {
     var source = $("#entry-template").html();
     var template = Handlebars.compile(source);
     var root = "http://www.ginofiore.eu/database/progetti.json"
+    if (window.matchMedia('(max-width: 770px)').matches) {
+       $('.filtraggio').hide()
+    }
     
     $.getJSON(root, function (data) {   
         var dati = data.progetti
@@ -37,13 +40,58 @@ $(document).ready(function () {
         }); 
     });
     
-    if (window.matchMedia('(max-width: 480px)').matches) {
-        $('.filtraggio').hide();
+    if (window.matchMedia('(max-width: 770px)').matches) {
+        $('.filterdesk').hide();
+        $('.filtermob').show();
+        $('.naming').hide(); 
+        
         window.onscroll = function() {
-           var viewport = window.innerHeight;
-           var scroll = $(document).scrollTop();
+            var viewport = window.innerHeight;
+            var scroll = $(document).scrollTop();
 
-           if (scroll < viewport) {
+            if (scroll < viewport) {
+                $('.navbar').css({
+                    "background-color": 'transparent'
+                });
+                $('.navbarscroll').show();
+                $('.herobanner-back-works').show();
+                $('.down').show();
+                $('.up').css({
+                    "opacity": '0'
+                });
+                $('.logonik').attr('src','css/img/pic_nik.png');
+                $('.navbar').removeClass('navbar-light');
+                $('.nav-link').removeClass('black');
+                $('.navbar').addClass('navbar-dark');
+            }
+
+            if (scroll >= viewport) {
+                $('.navbar').css({
+                    "background-color": 'white'
+                });
+                $('.navbarscroll').hide();
+                $('.herobanner-back-works').hide();
+                $('.down').hide();
+                $('.up').css({
+                    "opacity": '1'
+                });
+                $('.logonik').attr('src','css/img/pic_nik_black.png');
+                $('.navbar').addClass('navbar-light');
+                $('.nav-link').addClass('black');
+                $('.navbar').removeClass('navbar-dark');
+            }
+        };
+    } 
+    else {
+        $('.filtermob').hide();
+        $('.filterdesk').show();
+        $('.naming').show();
+        
+        window.onscroll = function() {
+            var viewport = window.innerHeight;
+            var scroll = $(document).scrollTop();
+
+            if (scroll < viewport) {
                 $('.navbar').css({
                     "background-color": 'transparent'
                 });
@@ -56,9 +104,13 @@ $(document).ready(function () {
                 $('.navbar').removeClass('navbar-light');
                 $('.nav-link').removeClass('black');
                 $('.navbar').addClass('navbar-dark');
-           }
+                $('.filtraggio').hide();
+                $('.filtraggio').css({
+                    "opacity": '0'
+                });
+            }
 
-           if (scroll >= viewport) {
+            if (scroll >= viewport) {
                 $('.navbar').css({
                     "background-color": 'white'
                 });
@@ -71,38 +123,13 @@ $(document).ready(function () {
                 $('.navbar').addClass('navbar-light');
                 $('.nav-link').addClass('black');
                 $('.navbar').removeClass('navbar-dark');
-            }
-        };
-    }
-    else {
-        window.onscroll = function() {
-           var viewport = window.innerHeight;
-           var scroll = $(document).scrollTop();
-
-           if (scroll >= viewport) {
-                $('.herobanner').remove(); 
-                AOS.init({
-                    duration: 1000,
-                });
-                $('.navbar').css({
-                    "background-color": 'white'
-                });
-                $('.herobanner-back-works').hide();
-                $('.down').hide();
                 $('.filtraggio').show()
                 $('.filtraggio').css({
                     "opacity": '1'
                 });
-                $('.up').css({
-                    "opacity": '1'
-                });
-                $('.logonik').attr('src','css/img/pic_nik_black.png');
-                $('.navbar').addClass('navbar-light');
-                $('.nav-link').addClass('black');
-                $('.navbar').removeClass('navbar-dark');
             }
-        }
-    };
-    
+        };
+
+    }
 });
   

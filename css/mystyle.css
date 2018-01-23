@@ -44,7 +44,7 @@ h6 {
 }
 
 h2 {
-    color: black;
+    color: #292b2c;
     margin-top: .5rem;
     font-size: 24pt;
 }
@@ -65,7 +65,7 @@ a {
 }
 
 a:hover {
-    color: black;
+    color: #292b2c;
     text-decoration: underline;
 }
 
@@ -284,9 +284,9 @@ HEROBANNER
     z-index: -4;
     min-width: 100%;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .block1 {
@@ -303,8 +303,8 @@ HEROBANNER
 }
 
 .herobanner-back-works {
-    min-width: 100%;
-    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
     background-image: url("img/home-background.jpg");
     background-size: cover;
     background-position: center;
@@ -570,6 +570,14 @@ h6.filter {
     float: none;
 }
 
+.dropblock {
+    width: 100vw;
+    left: -1rem;
+    padding-top: 10%;
+    border: 0;
+    text-align: left;
+}
+
 .padd {
     padding-top: 5%;
     padding-bottom: 5%;
@@ -658,7 +666,7 @@ SCHEDA PROGETTO
 
 backprog:hover {
     text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration-color: #292b2c;
     
     
 }
@@ -674,6 +682,33 @@ backprog:hover {
     padding-right: 0.8%;
 }
 
+.crediti{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.info{
+    color: darkgray;
+}
+.info span {
+    color: #292b2c;
+    font-weight: 500;
+}
+#teamPers {
+    list-style-type: circle;
+    color: darkgray;
+    margin-bottom: 0;
+}
+#teamPers p {
+    font-weight: 500;
+    color: #292b2c;
+}
+
+.team {
+    border: solid #dbdbdb;
+    border-width: 0 0 0 1.85pt;
+    padding-left: 4%;
+}
 
 /*
 -
@@ -690,17 +725,17 @@ CONTATTI
 }
 
 .contactblock {
-    color: black;
+    color: #292b2c;
     text-align: center;
 }
 
 .black {
-    color: black;
+    color: #292b2c;
     font-weight: 600;
 }
 
 .mail {
-    color: black;
+    color: #292b2c;
     font-size: 1rem;
 }
 
@@ -738,6 +773,9 @@ MEDIA QUERY
     }
     .gif {
         width: 35vw;
+    }
+    .team {
+        padding-left: 1.5%;
     }
 
 @media screen and (max-width: 768px) {
@@ -781,6 +819,11 @@ MEDIA QUERY
     .entry {
         margin: auto;
     }
+    .team {
+        border: 0;
+        margin-bottom: 10%;
+        padding-left: 2%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -815,6 +858,9 @@ MEDIA QUERY
         height: 80vw;
         opacity: 0.03;
     }
+    .videoback{
+        max-width: 400%;
+    }
     .servicelist {
         font-size: 18pt;
     }
@@ -823,9 +869,6 @@ MEDIA QUERY
     }
     .blockServ {
         width: 100%;
-    }
-    .videoback {
-        left: -100vh;
     }
     .buttontoworks a {
         text-decoration-color: white;
@@ -895,5 +938,9 @@ MEDIA QUERY
     }
     .grafic {
         margin-top: 25% !important;
+    }
+    .team {
+        border: 0;
+        padding-left: 4.5%;
     }
 }

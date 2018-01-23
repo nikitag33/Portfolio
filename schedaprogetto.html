@@ -43,6 +43,7 @@
 
         <!-- SCHEDA PROGETTO -->
         <div class="container list-unstyled padd" id='data-list'></div>
+    
 
         
         
@@ -57,14 +58,14 @@
                 <div data-aos="fade-right" data-aos-anchor-placement="center-bottom" class="col-md-6 col-8 logoimg" style="margin: auto; background-image: url({{logo}})"> </div>
                 <div data-aos="fade-left" data-aos-anchor-placement="center-bottom" class="row col-md-6 descrizionetext" style="margin: auto;">
                     <p class="col-12">{{descrizione}}<br><br> 
-                    <a target="_blank" href="{{link}}" class="link"><i class="fa fa-link" aria-hidden="true"></i>link</a></p>
+                    <a target="_blank" href="{{link}}" class="link"><i class="fa fa-link" aria-hidden="true"></i> {{link-name}}</a></p>
                 </div>
             </div>
             
             <video preload="metadata" poster="{{cover}}" onclick="this.paused?this.play():this.pause();" id="my-video" data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="aos-init col-12 mx-auto center-block video video-js" style="padding: 0;" controls controlsList="nodownload">
                 <source src="{{video}}" type="video/mp4"> Your browser does not support the video tag.
             </video>
-            <div class="row grafic" style="display: flex; justify-content: space-around; margin-top: 15%">
+            <div class="row grafic" style="display: flex; justify-content: space-around; margin-top: 10%">
                 <p style="margin: 0">Design</p>
                 <p style="margin: 0">Develop</p>
             </div>
@@ -78,7 +79,16 @@
                     <svg class="svg"></svg>
                 </div>
             </div>
-            
+            <div class="container crediti">
+                <div class="row">
+                    <div class="cred col-lg-7" style="padding: inherit;">
+                        <p class="info">Realizzato nel <span>{{data}}</span></p>
+                        <p class="info">Nel ruolo di <span>{{ruolo}}</span></p>
+                        <p class="info">Per <span>{{datore}}</span></p>
+                    </div>
+                    <div class="row team col-lg-5"><p class="info" id="team">Team:</p><ul id="teamPers"></ul></div>
+                </div>
+            </div>
         </div>
     </script>
     

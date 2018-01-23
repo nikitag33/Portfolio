@@ -1,0 +1,24 @@
+{
+    "proj": {
+        "titolo": "Ferrero"
+        , "img": "database/media/ferrero1.png"
+        , "logo": "database/media/ferrero2.png"
+        , "video": "database/media/video/ferrero3.mp4"
+        , "cover": "database/media/ferrero3_cover.jpg"
+        , "frase": "Unofficial Restyle & New Web Identity"
+        , "descrizione": "Realizzato come esercitazione durante il corso di Interaction Design, il restyling della comunicazione web di Ferrero abbraccia tutti i campi della progettazione web e della comunicazione con il cliente. Insieme alla progettazione della UI & UX abbiamo prodotto la versione beta, la guida di stile in versione grafica e web e i contenuti emulati di comunicazione al cliente"
+        , "design": "70"
+        , "develop": "30"
+        , "link": "https://invis.io/WMCBBBOHX#/222717065_Home"
+        , "link-name": "Guarda il prototipo su Invision"
+        , "data": "2017"
+        , "datore": "Quasar Design University - Corso di Interaction Design"
+        , "ruolo": "Scrum Master"
+        , "team":[
+            "Gino Fiore (Scrum Master & analyst)",
+            "Gabriele Rapone (UI & UX Designer)",
+            "Arianna Mereu (Visual Designer)",
+            "Daniele Pompa (Developer & analyst)"
+        ]
+    }
+}

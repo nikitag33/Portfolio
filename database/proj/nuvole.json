@@ -6,9 +6,14 @@
         , "video": ""
         , "cover": "database/media/nuvole3_cover.png"
         , "frase": "Con la Testa tra le Nuvole..."
-        , "descrizione": "Nuvole è un sito con l’obiettivo di raccontare una breve storia cercando di coinvolgere l’utente mediante semplici interazioni. La progettazione è stata basata principalmente sull’esperienza utente. Insieme è disponibile la guida di stile che contiene tutte le componenti grafiche del sito per eventuali implementazioni future"
-        , "design": "90"
-        , "develop": "10"
+        , "descrizione": "Nuvole è un sito con l’obiettivo di raccontare una breve storia cercando di coinvolgere l’utente mediante semplici interazioni. La progettazione è stata basata principalmente sull’esperienza utente. Insieme è disponibile la guida di stile che contiene tutte le componenti grafiche del sito per eventuali implementazioni future. Il sito non è mai stato sviluppato ed è disponibile solo il prototipo"
+        , "design": "95"
+        , "develop": "5"
         , "link": "https://invis.io/D4AF6FSQW#/210061061_1_Control"
+        , "link-name": "Guarda il prototipo su Invision"
+        , "data": "Dicembre 2016"
+        , "datore": "Quasar Design University - Corso di Interaction Design"
+        , "ruolo": "UI & UX Designer"
+        , "team": [""]
     }
 }

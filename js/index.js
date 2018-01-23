@@ -1,13 +1,16 @@
 $('.fix').hide()
 $('.best-work').hide();
 
-$(document).ready(function () {  
-    $(window).on('load', function () {
-        $('#preloader').fadeIn(1).delay(250).fadeOut('slow',function(){$(this).remove();});
-    });
+$(window).on('load', function () {
+    $('#preloader').fadeIn(1).delay(500).fadeOut('slow',function(){$(this).remove();});
+});
+    
+
+$(document).ready(function () { 
     AOS.init({
         duration: 1000,
     });
+    
     var viewport = $(document).height();
     var viewPortSize =  viewport / 4.3;
     var source = $("#entry-template").html();

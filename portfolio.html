@@ -33,7 +33,7 @@
             </ul>
         </div>
     </nav>
-    <nav class="navbar fixed-bottom navbar-dark bg-faded" style="z-index: +100">
+    <nav class="navbar fixed-bottom navbarscroll navbar-dark bg-faded" style="z-index: +100">
         <div class="animated bounce scroll">
             <p class="verticalText">SCROLL</p>
         </div>
@@ -44,7 +44,23 @@
         </div>
     </nav>
     <div class="fixed-bottom up" style="z-index: +100">
-        <p style="margin: 0; float: left">Gino Fiore</p>
+        <div style="margin: 0; float: left">
+            <div class="row" style="position: absolute; margin: 0; float: left">
+                <div class="dropdown dropup filter filtermob" style="margin-bottom: 0;">
+                    <p class="dropdown-toggle" data-toggle="dropdown" style="margin-bottom: 0;">Filtra per <span class="caret"></span></p>
+                    
+                    <ul class="dropdown-menu dropblock" style="margin-bottom: 0;">
+                        <li><button type="button" class="btn tutti attivo col-12" data-key="all">ALL PROJECT</button></li>
+                        <li><button type="button" class="btn col-12" data-key="visual">VISUAL</button></li>
+                        <li><button type="button" class="btn col-12" data-key="web">WEB DESIGN</button></li>
+                        <li><button type="button" class="btn col-12" data-key="video">VIDEO</button></li>
+                        <li><button type="button" class="btn col-12" data-key="prodotto">PRODUCT</button></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="naming" style="position: absolute;">Gino Fiore</p>
+        </div>
+        
         <div class="social" style="float: left">
             <a style="margin-top: 0;" target="_blank" href="#"><img src="css/icon/behance_b.png" width="20" height="20" class="d-inline-block align-top" alt=""></a>
             <a style="margin-top: 0;" target="_blank" href="https://www.linkedin.com/in/gino-fiore-700621153/"><img src="css/icon/linkedin_b.png" width="20" height="20" class="d-inline-block align-top" alt=""></a>
@@ -58,7 +74,7 @@
             <div class="square2"> </div>
         </square>
         <div class="container">
-            <div class="block1 col-md-4 center-block" style="display: table; margin: auto">
+            <div class="block1 col-lg-4 center-block" style="display: table; margin: auto">
                 <div class="centeredtext" style="display: table-cell; vertical-align: middle;">
                     <h3 data-aos="fade-in" data-aos-easing="ease" data-aos-delay="200" data-aos-duration="1500">PORTFOLIO</h3> </div>
             </div>
@@ -71,6 +87,19 @@
     <!-- FILTER -->
     <div class="container service">
         <div class="filtraggio">
+        <div class="dropdown-menu dropup filter col-lg-3">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Filtra per <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><button type="button" class="btn tutti attivo col-12" data-key="all">ALL PROJECT</button></li>
+                <li><button type="button" class="btn col-12" data-key="visual">VISUAL</button></li>
+                <li><button type="button" class="btn col-12" data-key="web">WEB DESIGN</button></li>
+                <li><button type="button" class="btn col-12" data-key="video">VIDEO</button></li>
+                <li><button type="button" class="btn col-12" data-key="prodotto">PRODUCT</button></li>
+            </ul>
+        </div>
+        </div>
+        
+        <div class="filtraggio filterdesk">
             <div class="filter col-md-3">
                 <h6>Filter by</h6>
                 <button type="button" class="btn tutti attivo col-12" data-key="all">ALL PROJECT</button>
@@ -80,6 +109,7 @@
                 <button type="button" class="btn col-12" data-key="prodotto">PRODUCT</button>
             </div>
         </div>
+
         <div class="row justify-content-between list-unstyled padd" id='data-list'> </div>
     </div>
     

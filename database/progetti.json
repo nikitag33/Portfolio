@@ -13,15 +13,15 @@
             "num": 2
         },
         {
-            "titolo": "TOZZI",
-            "img": "database/media/tozzi0.jpg",
-            "id": "tozzi",
+            "titolo": "AICO",
+            "img": "database/media/aico0.jpg",
+            "id": "aico",
             "num": 3
         }
     ],
     "progetti": [
         {
-            "titolo": "Tozzi - Uncerto Nonsochì",
+            "titolo": "Tozzi by Uncerto Nonsochì",
             "img": "database/media/tozzi3_cover.jpg",
             "id": "tozzi",
             "num": 1,
@@ -31,7 +31,7 @@
             ]
         },
         {
-            "titolo": "Monolith - IRo21",
+            "titolo": "Monolith by IRo21",
             "img": "database/media/monolith3_cover.jpg",
             "id": "monolith",
             "num": 2,
@@ -52,13 +52,35 @@
             ]
         },
         {
-            "titolo": "Nuvole",
-            "img": "database/media/nuvole1.png",
-            "id": "nuvole",
+            "titolo": "Ferrero Unofficial Restyle",
+            "img": "database/media/ferrero1.png",
+            "id": "ferrero",
             "num": 4,
             "filtro": [
                 "all",
+                "web",
+                "visual"
+            ]
+        },
+        {
+            "titolo": "Nuvole",
+            "img": "database/media/nuvole1.png",
+            "id": "nuvole",
+            "num": 5,
+            "filtro": [
+                "all",
                 "web"
+            ]
+        },
+        {
+            "titolo": "Buddy",
+            "img": "database/media/buddy1.png",
+            "id": "buddy",
+            "num": 6,
+            "filtro": [
+                "all",
+                "web",
+                "prodotto"
             ]
         }
     ]
