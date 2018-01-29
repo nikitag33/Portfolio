@@ -14,7 +14,7 @@ $(document).ready(function () {
     var template = Handlebars.compile(source);
     var id = window.location.search,
         id = id.replace('?id=', 'proj/');
-    var root = "http://www.ginofiore.eu/database/" + id + ".json"
+    var root = "./database/" + id + ".json"
     
     $.getJSON(root, function (data) {
         $.each(data, function (key, value) {

@@ -6,7 +6,7 @@ $(document).ready(function () {
     
     var source = $("#entry-template").html();
     var template = Handlebars.compile(source);
-    var root = "http://www.ginofiore.eu/database/progetti.json"
+    var root = "./database/progetti.json"
     if (window.matchMedia('(max-width: 770px)').matches) {
        $('.filtraggio').hide()
     }
