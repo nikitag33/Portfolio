@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Portfolio">
+    <meta property="og:image" content="http://www.ginofiore.eu/css/img/share_logo.png">
     <meta name="author" content="Gino Fiore">
     
     <!-- Bootstrap CSS -->
@@ -35,7 +36,8 @@
         </nav>
         <div class="fixed-bottom up"><a href="portfolio.html" style="color: black;"><i class="fa fa-chevron-left" aria-hidden="true"></i> <backprog>Tutti i Progetti</backprog></a>
             <div class="social" style="float: left">
-                <a style="margin-top: 0;" target="_blank" href="#"><img src="css/icon/behance_b.png" width="20" height="20" class="d-inline-block align-top" alt=""></a>
+                <!--<a style="margin-top: 0;" target="_blank" href="#"><img src="css/icon/behance_b.png" width="20" height="20" class="d-inline-block align-top" alt=""></a>-->
+                <a style="margin-top: 0;" target="_blank" href="http://www.ginofiore.eu/comecisonofinitoqui.mp4"><img src="css/icon/question_b.png" width="20" height="20" class="d-inline-block align-top" alt=""></a>
                 <a style="margin-top: 0;" target="_blank" href="https://www.linkedin.com/in/gino-fiore-700621153/"><img src="css/icon/linkedin_b.png" width="20" height="20" class="d-inline-block align-top" alt=""></a>
                 <a style="margin-top: 0;" target="_blank" href="https://www.instagram.com/nikita_g33/"><img src="css/icon/instagram_b.png" width="20" height="20" class="d-inline-block align-top" alt=""></a>
             </div>
@@ -57,17 +59,18 @@
             <div class="row col-12 descriz" style="display: flex; align-item: center; padding-left: 0; padding-right: 0;">
                 <div data-aos="fade-right" data-aos-anchor-placement="center-bottom" class="col-md-6 col-8 logoimg" style="margin: auto; background-image: url({{logo}})"> </div>
                 <div data-aos="fade-left" data-aos-anchor-placement="center-bottom" class="row col-md-6 descrizionetext" style="margin: auto;">
-                    <p class="col-12">{{descrizione}}<br><br> 
-                    <a target="_blank" href="{{link}}" class="link"><i class="fa fa-link" aria-hidden="true"></i> {{link-name}}</a></p>
+                    <p class="col-12">{{descrizione}}<br><br>  
+                    <a target="_blank" href="{{link}}" class="link linkTo"><i class="fa fa-link" aria-hidden="true"></i> {{link-name}}</a></p>
                 </div>
             </div>
             
-            <video preload="metadata" poster="{{cover}}" onclick="this.paused?this.play():this.pause();" id="my-video" data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="aos-init col-12 mx-auto center-block video video-js" style="padding: 0;" controls controlsList="nodownload">
-                <source src="{{video}}" type="video/mp4"> Your browser does not support the video tag.
-            </video>
+            <div class="video-container aos-init mx-auto center-block" style="background-image: url('{{cover}}');" data-aos="fade-up" data-aos-anchor-placement="center-bottom"> 
+                <iframe style="padding: 0;" id="my-video" src="https://player.vimeo.com/video/{{video}}?color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+
             <div class="row grafic" style="display: flex; justify-content: space-around; margin-top: 10%">
                 <p style="margin: 0">Design</p>
-                <p style="margin: 0">Develop</p>
+                <p style="margin: 0">Coding</p>
             </div>
             <div class="row set-size">
                 <div class="stat-group" data-aos="fade-right" data-aos-anchor-placement="center-bottom">

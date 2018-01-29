@@ -1,9 +1,9 @@
 {
     "proj": {
         "titolo": "Ferrero"
-        , "img": "database/media/ferrero1.png"
+        , "img": "database/media/ferrero1.jpg"
         , "logo": "database/media/ferrero2.png"
-        , "video": "database/media/video/ferrero3.mp4"
+        , "video": "228340081"
         , "cover": "database/media/ferrero3_cover.jpg"
         , "frase": "Unofficial Restyle & New Web Identity"
         , "descrizione": "Realizzato come esercitazione durante il corso di Interaction Design, il restyling della comunicazione web di Ferrero abbraccia tutti i campi della progettazione web e della comunicazione con il cliente. Insieme alla progettazione della UI & UX abbiamo prodotto la versione beta, la guida di stile in versione grafica e web e i contenuti emulati di comunicazione al cliente"

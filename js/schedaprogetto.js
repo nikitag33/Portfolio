@@ -22,7 +22,10 @@ $(document).ready(function () {
             var html = template(context);
             $('#data-list').append(html);
             if (context.video == ""){
-                $("#my-video").removeAttr("controls")
+                $("#my-video").remove();
+            };
+            if (context.link == ""){
+                $(".linkTo").remove();
             };
         });
         $.each(data.proj.team, function (key, value) {
@@ -124,7 +127,7 @@ $(document).ready(function () {
     
         //call it on ready
     window.onscroll = function () {
-       if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 200) {
+       if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 600) {
            stat();
            window.scrollY = null
        }

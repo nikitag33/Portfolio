@@ -289,6 +289,26 @@ HEROBANNER
     transform: translate(-50%, -50%);
 }
 
+.videoback video[poster]{
+    height: 100%;
+    width: 100%;
+}
+
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
 .block1 {
     height: 100vh;
     margin: auto;
@@ -579,10 +599,7 @@ h6.filter {
 }
 
 .padd {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 0;
-    padding-right: 0;
+    padding:5% 0;
 }
 
 .entry {
@@ -623,12 +640,21 @@ SCHEDA PROGETTO
 .imageProj {
     padding: 0;
     box-shadow: 0px 3px 15px darkgray;
-    color: gra
 }
 
-.video {
+.video-container {
     box-shadow: 0px 3px 15px darkgray;
-    padding: 0;
+    padding-bottom: 56.25%;
+    background-size: cover;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,.video-container object,.video-container embed {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
 }
 
 .entrata {
@@ -727,6 +753,15 @@ CONTATTI
 .contactblock {
     color: #292b2c;
     text-align: center;
+}
+
+.block1cont {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.block1cont h2 br {
+    display: none;
 }
 
 .black {
@@ -913,14 +948,23 @@ MEDIA QUERY
         margin-bottom: 6%;
     }   
     .padd {
-        padding-top: 20%;
+        padding-top: 15%;
+    }
+    .block1cont {
+        text-align: left;
+    }
+    .block1cont h2 br {
+        display: block;
     }
     .cont1 {
-        margin-top: 15%;
-        text-align: center; 
+        margin-top: 5%;
+        text-align: left; 
     }
     .cont2 {
-        text-align: center; 
+        text-align: left; 
+    }
+    .contsquare {
+        opacity: 0;
     }
     .socialCont a {
         margin-left: 1.5%;

@@ -4,7 +4,7 @@
         , "img": "database/media/nuvole1.png"
         , "logo": "database/media/nuvole2.png"
         , "video": ""
-        , "cover": "database/media/nuvole3_cover.png"
+        , "cover": "database/media/nuvole3_cover.jpg"
         , "frase": "Con la Testa tra le Nuvole..."
         , "descrizione": "Nuvole è un sito con l’obiettivo di raccontare una breve storia cercando di coinvolgere l’utente mediante semplici interazioni. La progettazione è stata basata principalmente sull’esperienza utente. Insieme è disponibile la guida di stile che contiene tutte le componenti grafiche del sito per eventuali implementazioni future. Il sito non è mai stato sviluppato ed è disponibile solo il prototipo"
         , "design": "95"

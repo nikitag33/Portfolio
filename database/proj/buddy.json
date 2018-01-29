@@ -1,12 +1,12 @@
 {
     "proj": {
         "titolo": "Buddy"
-        , "img": "database/media/buddy1.png"
+        , "img": "database/media/buddy1.jpg"
         , "logo": "database/media/buddy2.png"
-        , "video": "database/media/video/buddy3.mp4"
+        , "video": "252738410"
         , "cover": "database/media/buddy3_cover.jpg"
         , "frase": "Il miglior amico del Videomaker"
-        , "descrizione": "Buddy è il tool che ti permette di risparmiare tempo gestendo il rapporto con i tuoi clienti con maggior semplicità. Nasce all'interno di Peekaboo, il corso di pre-accellerazione per giovani startup. Il progetto è finalizzato allo studio dei metodi di validazione di un'idea e sullo sviluppo di una startup. Buddy nasce basandosi sulle necessità dei videomaker ed ha l'obiettivo di allargarsi fino a tutti i freelancer. "
+        , "descrizione": "Buddy è il tool che ti permette di risparmiare tempo gestendo il rapporto con i tuoi clienti con maggior semplicità. Nasce all'interno di Peekaboo, il corso di pre-accellerazione per giovani startup. Il progetto è finalizzato allo studio dei metodi di validazione di un'idea e sullo sviluppo di una startup. Buddy è nato basandosi sulle necessità dei videomaker ed ha l'obiettivo di allargarsi fino a tutti i freelancer. "
         , "design": "90"
         , "develop": "10"
         , "link": "http://go-buddy.it/"

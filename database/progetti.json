@@ -1,44 +1,45 @@
 {
     "evidenza": [
         {
+            "titolo": "FERRERO",
+            "img": "database/media/ferrero0.jpg",
+            "id": "ferrero",
+            "num": 1
+        },
+        {
             "titolo": "MONOLITH",
             "img": "database/media/monolith0.jpg",
             "id": "monolith",
-            "num": 1
+            "num": 2
         },
         {
             "titolo": "NUVOLE",
             "img": "database/media/nuvole0.jpg",
             "id": "nuvole",
-            "num": 2
-        },
-        {
-            "titolo": "AICO",
-            "img": "database/media/aico0.jpg",
-            "id": "aico",
             "num": 3
         }
     ],
     "progetti": [
         {
-            "titolo": "Tozzi by Uncerto Nonsochì",
-            "img": "database/media/tozzi3_cover.jpg",
-            "id": "tozzi",
-            "num": 1,
-            "filtro": [
-                "all",
-                "video"
-            ]
-        },
-        {
-            "titolo": "Monolith by IRo21",
+            "titolo": "Monolith - IRo21",
             "img": "database/media/monolith3_cover.jpg",
             "id": "monolith",
-            "num": 2,
+            "num": 1,
             "filtro": [
                 "all",
                 "visual",
                 "video"
+            ]
+        },
+        {
+            "titolo": "Ferrero Unofficial Restyle",
+            "img": "database/media/ferrero1.jpg",
+            "id": "ferrero",
+            "num": 2,
+            "filtro": [
+                "all",
+                "web",
+                "visual"
             ]
         },
         {
@@ -52,14 +53,13 @@
             ]
         },
         {
-            "titolo": "Ferrero Unofficial Restyle",
-            "img": "database/media/ferrero1.png",
-            "id": "ferrero",
+            "titolo": "Tozzi - Uncerto Nonsochì",
+            "img": "database/media/tozzi3_cover.jpg",
+            "id": "tozzi",
             "num": 4,
             "filtro": [
                 "all",
-                "web",
-                "visual"
+                "video"
             ]
         },
         {
@@ -74,7 +74,7 @@
         },
         {
             "titolo": "Buddy",
-            "img": "database/media/buddy1.png",
+            "img": "database/media/buddy1.jpg",
             "id": "buddy",
             "num": 6,
             "filtro": [

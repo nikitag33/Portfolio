@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Portfolio">
+    <meta name="description" content="Personal Web Site - Portfolio">
+    <meta property="og:image" content="http://www.ginofiore.eu/css/img/share_logo.png">
     <meta name="author" content="Gino Fiore">
     
-    <!-- Bootstrap CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    
-    <!-- Icon Font -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     
     <!-- My CSS -->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/mystyle.css">
     <link rel="stylesheet" href="aos/aos.css">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="css/img/app_logo.png" />
     <link rel="icon" type="image/png" href="css/icon/nik-ico.png" /> </head>
 
 <body>
@@ -25,11 +25,11 @@
     <div id="preloader"><div rel="preload" class="gif"></div></div>
     
     <!-- PRELOADING IMG -->
-    <div id='data-preloading' style="height: 0; width: 0;"></div>
+    <div id='data-preloading' style="height: 0; width: 0;"><img src="css/img/pic_nik_black.png" width="10" height="0"></div>
     
     <!-- NAVBAR -->
-    <nav class="navbar navbar-toggleable-md fixed-top navbar-dark" style="z-index: +99">
-        <a class="navbar-brand navbar-expand-lg" href="index.html"> <img src="css/img/pic_nik.png" width="60" height="30" class="d-inline-block align-top" alt=""> </a>
+    <nav class="navbar navup navbar-toggleable-md fixed-top navbar-dark" style="z-index: +101">
+        <a class="navbar-brand navbar-expand-lg" href="index.html"> <img src="css/img/pic_nik.png" width="60" height="30" class="d-inline-block align-top logonik" alt=""> </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto" style="text-align: right">
@@ -44,7 +44,8 @@
             <p class="verticalText">SCROLL</p>
         </div>
         <div class="social ml-auto">
-            <a target="_blank" class="navbar-brand navbar-expand-lg" href="#"> <img src="css/icon/behance.png" width="20" height="20" class="d-inline-block align-top" alt=""> </a>
+            <!--<a target="_blank" class="navbar-brand navbar-expand-lg" href="#"> <img src="css/icon/behance.png" width="20" height="20" class="d-inline-block align-top" alt=""> </a>-->
+            <a target="_blank" class="navbar-brand navbar-expand-lg" href="http://www.ginofiore.eu/comecisonofinitoqui.mp4"> <img src="css/icon/question.png" width="20" height="20" class="d-inline-block align-top" alt=""> </a>
             <a target="_blank" class="navbar-brand navbar-expand-lg" href="https://www.linkedin.com/in/gino-fiore-700621153/"> <img src="css/icon/linkedin.png" width="20" height="20" class="d-inline-block align-top" alt=""> </a>
             <a target="_blank" class="navbar-brand navbar-expand-lg" href="https://www.instagram.com/nikita_g33/"> <img src="css/icon/instagram.png" width="20" height="20" class="d-inline-block align-top" alt=""> </a>
         </div>
@@ -60,8 +61,9 @@
         <square class="squarecont2">
             <div class="square2 squareRot"> </div>
         </square>
-        <video class="videoback" autoplay loop muted preload poster="css/img/home-background.jpg" id="bgvid">
-            <source src="css/back-video.mp4" type="video/mp4" /> </video>
+        <video class="videoback" controls="false" autoplay loop muted preload poster="css/img/home-background.jpg" id="bgvid">
+            <source src="css/back-video.mp4" type="video/mp4"/> 
+        </video>
         <div class="container">
             <div class="block1 center-block col-md-6 col-lg-4" style="display: table">
                 <div class="centeredtext" style="display: table-cell; vertical-align: middle;">

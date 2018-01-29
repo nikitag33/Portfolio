@@ -1,5 +1,8 @@
-$(document).ready(function () {
+$(window).on('load', function () {
+    $('#preloader').fadeIn(1).delay(500).fadeOut('slow',function(){$(this).remove();});
+});
 
+$(document).ready(function () {
     AOS.init({
         duration: 1000,
     });

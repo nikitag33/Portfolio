@@ -42,6 +42,13 @@ $(document).ready(function () {
         var scroll = $(window).scrollTop();
         
         if (scroll <= viewPortSize) {
+            $('.logonik').attr('src','css/img/pic_nik.png');
+            $('.navbar').removeClass('navbar-light');
+            $('.nav-link').removeClass('black');
+            $('.navup').addClass('navbar-dark');
+            $('.navup').css({
+                "background-color": 'transparent'
+            });
             $('.herobanner-back').show();
             $('.best-work').hide();
             $('.scroll').css({
@@ -53,6 +60,16 @@ $(document).ready(function () {
                 "transition-duration": "0s"
             })
             $('.fix').hide();
+        }
+        
+        if (scroll > viewPortSize*0.98) {
+            $('.logonik').attr('src','css/img/pic_nik_black.png');
+            $('.navbar').addClass('navbar-light');
+            $('.nav-link').addClass('black');
+            $('.navup').removeClass('navbar-dark');
+            $('.navup').css({
+                "background-color": 'white'
+            });
         }
         
         if (scroll > viewPortSize) {
@@ -93,6 +110,16 @@ $(document).ready(function () {
             });
         }
         
+        if (scroll >= viewPortSize*1.92) {
+            $('.logonik').attr('src','css/img/pic_nik.png');
+            $('.navbar').removeClass('navbar-light');
+            $('.nav-link').removeClass('black');
+            $('.navup').addClass('navbar-dark');
+            $('.navup').css({
+                "background-color": 'transparent'
+            });
+        }
+            
         if (scroll >= viewPortSize*2.4) {
             $('.scroll').css({
                 "animation-iteration-count": '0',
